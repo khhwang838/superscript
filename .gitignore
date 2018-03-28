@@ -5,7 +5,7 @@ test/fixtures/cache/*
 coverage/*
 
 # Node
-node_modules/*
+node_modules/
 npm-debug.log
 
 # Node profiler logs

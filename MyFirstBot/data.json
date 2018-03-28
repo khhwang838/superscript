@@ -1,0 +1,315 @@
+{
+    "topics": {
+        "random": {
+            "name": "random",
+            "flags": {
+                "keep": "keep"
+            },
+            "keywords": [],
+            "filter": null,
+            "gambits": [
+                "PtgEZbRY",
+                "leTxSKW8",
+                "iMWtvFsR",
+                "5NtJLlci",
+                "gAEuSBJl",
+                "8Q4iXnGs",
+                "Ob4d9igS",
+                "FWk6jDyS",
+                "mYZAMuQe",
+                "ODgvBPYa",
+                "9rSEv5Pw"
+            ]
+        }
+    },
+    "gambits": {
+        "PtgEZbRY": {
+            "trigger": {
+                "flags": {},
+                "filter": "^hasTag('hello')",
+                "question": false,
+                "raw": "*~2",
+                "clean": "\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
+            },
+            "replies": [
+                "3CuGJ9K4",
+                "q7UwdQqc",
+                "xl73kxMG",
+                "KewuAHZC",
+                "rJDqe2Qm",
+                "nVuFPtil"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "leTxSKW8": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "wow *",
+                "clean": "wow(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
+            },
+            "replies": [
+                "XULdeBV1"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "iMWtvFsR": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "test2 rebuild *",
+                "clean": "test2 rebuild(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
+            },
+            "replies": [
+                "YbLtW11V"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "5NtJLlci": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "안녕하세요",
+                "clean": "안녕하세요"
+            },
+            "replies": [
+                "lMqylBdk",
+                "GafRFmog"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "gAEuSBJl": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "안녕 *",
+                "clean": "안녕(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
+            },
+            "replies": [
+                "5IC7Xuxl"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "8Q4iXnGs": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "dlswmdtlfvo",
+                "clean": "dlswmdtlfvo"
+            },
+            "replies": [
+                "lumHw8po"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "Ob4d9igS": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "*1 *1",
+                "clean": "\\s*((?:[^\\s]+\\s+){0,0}(?:[^\\s]+))\\s*\\s*((?:[^\\s]+\\s+){0,0}(?:[^\\s]+))\\s*"
+            },
+            "replies": [
+                "yIQpSOLa"
+            ],
+            "conditional": null,
+            "conversation": [
+                "lumHw8po"
+            ],
+            "topic": "random"
+        },
+        "FWk6jDyS": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "wassup",
+                "clean": "wassup"
+            },
+            "replies": [
+                "GqQ1ldd1"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "mYZAMuQe": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "bonbon",
+                "clean": "bonbon"
+            },
+            "replies": [
+                "mnofw0Bu"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "ODgvBPYa": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "__greet__",
+                "clean": "__greet__"
+            },
+            "replies": [
+                "qgSMrZl6",
+                "JaUNpPpA",
+                "jNQM3Z3J"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "9rSEv5Pw": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "*",
+                "clean": "(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
+            },
+            "replies": [
+                "EZqO51IC",
+                "4SR3eq6i",
+                "HkUcLE24"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        }
+    },
+    "replies": {
+        "3CuGJ9K4": {
+            "string": "Hi!",
+            "filter": null,
+            "keep": false
+        },
+        "q7UwdQqc": {
+            "string": "Hi, how are you?",
+            "filter": null,
+            "keep": false
+        },
+        "xl73kxMG": {
+            "string": "How are you?",
+            "filter": null,
+            "keep": false
+        },
+        "KewuAHZC": {
+            "string": "Hello",
+            "filter": null,
+            "keep": false
+        },
+        "rJDqe2Qm": {
+            "string": "Howdy",
+            "filter": null,
+            "keep": false
+        },
+        "nVuFPtil": {
+            "string": "Ola",
+            "filter": null,
+            "keep": false
+        },
+        "XULdeBV1": {
+            "string": "This isAwesome <cap>",
+            "filter": null,
+            "keep": false
+        },
+        "YbLtW11V": {
+            "string": "Rebuilding works fine.",
+            "filter": null,
+            "keep": false
+        },
+        "lMqylBdk": {
+            "string": "{delay=1} 안녕하세요!\\n",
+            "filter": null,
+            "keep": false
+        },
+        "GafRFmog": {
+            "string": "{delay=2} 무엇을 도와드릴까요? :)",
+            "filter": null,
+            "keep": false
+        },
+        "5IC7Xuxl": {
+            "string": "((안녕~!|하이!!|봉주르~~!!))",
+            "filter": null,
+            "keep": false
+        },
+        "lumHw8po": {
+            "string": "저와 대화하려면 인증이 필요합니다. 성함을 입력해주세요.",
+            "filter": null,
+            "keep": false
+        },
+        "yIQpSOLa": {
+            "string": "<cap2> 님, 안녕하세요. 무엇을 도와드릴까요?",
+            "filter": null,
+            "keep": false
+        },
+        "GqQ1ldd1": {
+            "string": "{@__greet__} 궁금한거 있으면 다 물어봐!!",
+            "filter": null,
+            "keep": false
+        },
+        "mnofw0Bu": {
+            "string": "{@__greet__}",
+            "filter": null,
+            "keep": false
+        },
+        "qgSMrZl6": {
+            "string": "안녕!!",
+            "filter": null,
+            "keep": false
+        },
+        "JaUNpPpA": {
+            "string": "헬로우!!",
+            "filter": null,
+            "keep": false
+        },
+        "jNQM3Z3J": {
+            "string": "곤니치와!!",
+            "filter": null,
+            "keep": false
+        },
+        "EZqO51IC": {
+            "string": "무슨 말씀이신지요?",
+            "filter": null,
+            "keep": false
+        },
+        "4SR3eq6i": {
+            "string": "흠...무슨 말인지 잘 모르겠어요. 다시 말씀해주실래요?",
+            "filter": null,
+            "keep": false
+        },
+        "HkUcLE24": {
+            "string": "제가 아직 공부중이라 많이 부족해요. 좀 더 쉽게 말씀해 주실래요?",
+            "filter": null,
+            "keep": false
+        }
+    },
+    "checksums": {
+        "./chat/main.ss": "c6da4ba5b05e2f08be99fb6fc65004f4a79b18d4"
+    },
+    "version": 1
+}
