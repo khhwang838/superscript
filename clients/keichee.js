@@ -9,17 +9,16 @@ server.use(bodyParser.json());
 
 let bot;
 
-/* Deprecated API */
-// server.get('/superscript', (req, res) => {
-//   if (req.query.message) {
-//     return bot.reply('user1', req.query.message, (err, reply) => {
-//       res.json({
-//         message: reply.string,
-//       });
-//     });
-//   }
-//   return res.json({ error: 'No message provided.' });
-// });
+server.get('/superscript', (req, res) => {
+  if (req.query.message) {
+    return bot.reply('user1', req.query.message, (err, reply) => {
+      res.json({
+        message: reply.string,
+      });
+    });
+  }
+  return res.json({ error: 'No message provided.' });
+});
 
 // TODO : POST방식으로 JSON 입력받도록 수정
 server.post('/superscript', (req, res) => {
@@ -49,39 +48,31 @@ const options = {
     clean: true,
   },
   importFile: './data.json',
-  useMultitenancy: true,
-  tenantId: 'master',
 };
 
 superscript.setup(options, (err, botInstance) => {
   if (err) {
     console.error(err);
   }
-  // bot = botInstance;
-  bot = botInstance.getBot(options.tenantId);
-  bot.importFile(options.importFile, err => console.error(err));
+  bot = botInstance;
+
   server.listen(PORT, () => {
     console.log(`===> 🚀  Server is now running on port ${PORT}`);
   });
 });
 
-/* Deprecated */
-// server.get('/reload', function (req, res) {
-//   // options = {importFile: './data.json'};
-//   reloadScripts(req, res);
-// });
+server.get('/reload', function (req, res) {
+  // options = {importFile: './data.json'};
+  reloadScripts(req, res);
+});
 function reloadScripts(req, res){
-  options.tenantId = req.body.tenantId;
-  console.log('tenantId: ', options.tenantId);
   superscript.setup(options, (err, botInstance) => {
     if (err) {
       console.error(err);
       return res.json({error:'Loading bot data is failed.'});
     }
-    // bot = botInstance;
-    bot = botInstance.getBot(options.tenantId);
-    bot.importFile(options.importFile, err => console.error(err));
-    console.log('Reloaded pattern data for tenantId [',options.tenantId,'].');
+    bot = botInstance;
+    console.log('reloaded pattern data.');
     return res.json({message:'Bot data is succcessfully loaded.'});
   });
 }
@@ -99,7 +90,7 @@ var _sfacts2 = _interopRequireDefault(_sfacts);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-server.post('/rebuild', function (req, res) {
+server.get('/rebuild', function (req, res) {
   _commander2.default.version('1.0.2')
     .option('-p, --path [type]', 'Input path', './chat')
     .option('-o, --output [type]', 'Output options', 'data.json')
@@ -121,10 +112,6 @@ server.post('/rebuild', function (req, res) {
     }
 
     return _sfacts2.default.load(mongoURI, _commander2.default.facts, true, (err, factSystem) => {
-
-      console.log('facts: ', _commander2.default.facts);
-      console.log('factSystem: ', factSystem);
-
       _ssParser2.default.parseDirectory(_commander2.default.path, { factSystem }, (err, result) => {
         if (err) {
           console.error(`Error parsing bot script: ${err}`);
